@@ -1,0 +1,11 @@
+body {
+    font-family: 'Zawgyi-One','Courier New', Courier, monospace,'Uni Mon';
+}
+.text {
+    margin-top: 100px;
+}
+.formula {
+    width: auto;
+    padding: 10px;
+    border: 1px solid #555;
+}
