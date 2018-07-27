@@ -67,3 +67,9 @@ a:hover {
     padding: 4px;
     margin-top: 10px;
 }
+.degree {
+    font-size: 10px;
+}
+.ref {
+    font-size: 8px;
+}
