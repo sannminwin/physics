@@ -52,7 +52,8 @@ a:hover {
     margin-bottom: 30px;
 }
 .footer {
-    height: 200px;
+    height: 100px;
+    padding: 20px;
 }
 .media {
     margin-bottom: 10px;
