@@ -112,6 +112,8 @@
                     </a>
                 </div>
             </div>
+
+            
             <div class="media" id="data-file">
                 <img src="image/weightAmass.jpg" class="align-self-center mr-3 mecha-img" style="width: 150px;height: 120px;box-shadow: 3px 3px 3px #555;margin-left: 10px;">
                 <div class="media-body">
@@ -146,9 +148,9 @@
             $(".navbar-toggler").on("click",function(){
                 $("#navbarPhy").slideToggle();
             });
-            $(".media").on("keyup", function() {
+            $("#data-list").on("keyup", function() {
             var value = $(this).val().toLowerCase();
-                $("#data-file").filter(function() {
+                $(".media").filter(function() {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
             });
