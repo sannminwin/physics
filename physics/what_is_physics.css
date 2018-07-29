@@ -1,0 +1,9 @@
+h1 {
+    padding-top: 80px;
+}
+h1,p,a {
+    font-family: "Zawgyi-One",Arial, Helvetica, sans-serif,'Uni Mon';
+}
+.section-lesson {
+    padding-top: 80px;
+}
