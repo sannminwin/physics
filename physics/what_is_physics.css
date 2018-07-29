@@ -5,6 +5,11 @@ h1 {
 h1,p,a {
     font-family: "Zawgyi-One",Arial, Helvetica, sans-serif,'Uni Mon';
 }
+
 .section-lesson {
     padding-top: 80px;
+}
+.media {
+    margin-top: 20px;
+
 }
