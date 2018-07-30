@@ -4,6 +4,7 @@
 body {
     font-family: "Zawgyi-One",Arial, Helvetica, sans-serif,'Uni Mon';
 }
+
 h1 {
     padding: 15px;
     text-align: center;
@@ -29,6 +30,9 @@ a {
 a:hover {
     color: #000;
 }
+a:focus {
+    color: #f00;
+}
 .mecha-img {
     cursor: pointer;    
 }
@@ -38,7 +42,8 @@ a:hover {
 .course {
     padding: 15px;
     border-radius: 15px;
-    width: 30%;
+    width: 50%;
+    font-family: "Zawgyi-One",Arial, Helvetica, sans-serif,'Uni Mon';
 }
 .formula {
     border: 1px solid #000;
