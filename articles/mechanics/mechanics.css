@@ -35,7 +35,11 @@ a:hover {
 .exp-img {
     margin-top: 40px;
 }
+.course {
+    padding: 15px;
+    border-radius: 15px;
 
+}
 .formula {
     border: 1px solid #000;
     padding: 4px;
