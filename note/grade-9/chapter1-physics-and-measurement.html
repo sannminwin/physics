@@ -65,10 +65,12 @@
                 </div>
             </nav> 
 
-            <div class="container text">
+            <div class="container text" id="notee">
+                
+                <input class="form-control search-note" id="data-list" type="text" placeholder="Search.." maxlength="2">
 
                 <!--exercise no(1)-->
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
                         <h5 class="note">1. Write a page on why physics ought to be studied.</h5>
                         <h6 class="note">၁.႐ူပေဗဒ ကို ဘာလို႔ ေလ့လာသင့္သလဲ .. စာတစ္မ်က္ႏွာေရးျပပါတဲ့။</h6>
@@ -83,9 +85,9 @@
                 </div>
 
                 <!--exercise no(2)-->
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
-                        <h5 class="note">2. Is physics useful in the study of chemistry, biology and engineering subjects?</h5>
+                        <h5 class="note"><span id="note-num">2</span>. Is physics useful in the study of chemistry, biology and engineering subjects?</h5>
                         <h4 class="note"> ၂. ႐ူပေဗဒဟာ ဓာတု၊ ဇီဝနဲ႔ အင္ဂ်င္နီယာဘာသာရပ္ေတြကို ေလ့လာတဲ့ေနရာမွာ အသံုးဝင္လားတဲ့။ </h4>
                     </div>
                     <div class="note-ans">
@@ -96,9 +98,9 @@
                 </div>
 
 
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
-                        <h5 class="note">3. Explain how physics can help a person in the medical profession.</h5>
+                        <h5 class="note"><span id="note-num">3</span>. Explain how physics can help a person in the medical profession.</h5>
                     </div>
                     <div class="note-ans">
                         <p class="note">
@@ -109,7 +111,7 @@
                     </div>
                 </div>
 
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
                         <h5 class="note">4. Which of the following is/are a one-sentence definition of physics?</h5>
                     </div>
@@ -158,7 +160,7 @@
                     </div>
                 </div>
 
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
                         <h5 class="note">6. The SI system has been accepted because it has many advantages compared to 
                             the previous systems uesd.Discuss these advantages.
@@ -180,7 +182,7 @@
                         <h5 class="note">
                             7. Express the following measurements in decimal notation. 
                         </h5>
-                        <p class="note">
+                        <p class="note" id="note-list">
                             (Example : 10 <sup> -5 </sup> =0.000 01 ; 10 <sup> -2 </sup> =0.01) <br>
                             Diameter of nucleus of an atom..... 10 <sup> -15</sup> m <br>
                             Diameter of sodium atom............ 10 <sup> -11 </sup> m <br>
@@ -201,7 +203,7 @@
                         <h5 class="note">
                             8. Express the following in the <strong> standard form </strong> (numbers expressed using powers of 10) .
                         </h5>
-                        <p class="note">
+                        <p class="note"> id="note-list"
                             (Example : 1 000 000 = 10 <sup>6</sup>; 1000 = 10 <sup>3</sup>; 0.001 = 10 <sup> -3 </sup>) <br>
                             Length of a mouse .................... 0.1 m <br>
                             A man's height ....................... 1-2 m <br>
@@ -221,7 +223,7 @@
                     </div>
                 </div>
 
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
                         <h5 class="note">
                             9. The sun is a medium-sized star.In the Milky Way galaxy which includes the sun, there are one hundred
@@ -238,7 +240,7 @@
                     </div>
                 </div>
 
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
                         <h5 class="note">
                             10. The tissue of a cell is 70 Å thick ( Å = angstrom unit). if 1 Å = 10 <sup> -10 </sup>
@@ -256,7 +258,7 @@
                     </div>
                 </div>
 
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
                         <h5 class="note">
                             11. The sizes of the atom, man, the sun and the universe are given as follows:
@@ -267,16 +269,29 @@
                             The sun ..........  1.2 x 10 <sup>9</sup> m <br>
                             The universe .....  10 <sup> 26 </sup> m <br>
                             Determine whether the following are correct. <br>
-                            Size of man ~  &radic;<span class="root"> size of atom x size of the sun </span> <br>
+                            Size of man ~  &radic;<span class="root"> size of atom x size of the sun </span> <br><br>
                             Size of the sun ~  &radic;<span class="root"> size of atom x size of the universe </span>
                         </p> 
                     </div>
                     <div class="note-ans">
-                        <p class="note"></p>
+                        <p class="note">
+                            &radic;<span class="root"> size of atom x size of the sun </span> <br> <br>
+                            =  &radic;<span class="root">4x10<sup>-10</sup>x 1.2 x 10<sup>9</sup></span>    
+                            = &radic;<span class="root">4.8 x 10<sup>-1</sup></span> = 0.693m ≈ 1 m <br><br>
+                            size of man = 1 ~ 2 m <br><br>
+                            ∴ size of man ≈  &radic;<span class="root"> size of atom x size of the sun </span> is correct. <br><br>
+
+                            &radic;<span class="root"> size of atom x size of the universe </span>
+                            = &radic;<span class="root">4 x 10<sup>-10</sup>x 10<sup>26</sup></span> 
+                            = &radic;<span class="root">4 x 10<sup>16</sup></span>
+                            = 2 x 10<sup>13</sup> m <br><br>
+                            size of the sun = 1.2 x 10<sup>9</sup>m <br><br>
+                            ∴ size of the sun ≈  &radic;<span class="root">size of atom x size of the universe </span> is correct.
+                        </p>
                     </div>
                 </div>
 
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
                         <h5 class="note">
                               12. The size of elementary particles ( which are also the smallest particles) is of the 
@@ -285,22 +300,37 @@
                         </h5> 
                     </div>
                     <div class="note-ans">
-                        <p class="note"></p>
+                        <p class="note">
+                            the ratio of the size of universe <br>
+                            to the size of an elementary =<sup>size of universe</sup> / 
+                            <sub> size of the elementary</sub> <br>
+                            = <sup>10 <sup>26</sup></sup> 
+                                /
+                                <sub>10<sub>-15</sub></sub> <br>
+                            = 10 <sup>41</sup>
+                        </p>
                     </div>
                 </div>
 
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
                         <h5 class="note">
                             13. One acre is equal to 43 560 ft<sup>2</sup>.How much is it in m<sup>2</sup>?
                         </h5> 
                     </div>
                     <div class="note-ans">
-                        <p class="note"></p>
+                        <p class="note">
+                            1 ft<sup>2</sup> = 0.0929m<sup>2</sup> <br>
+                            43560 ft<sup>2</sup> = 43560 x 0.0929 = 4046.7 m<sup>2</sup>
+                        </p>
+                        <p class="note">
+                            1 ft = 0.3048 m <br>
+                            43560 ft<sup>2</sup> = 43500 x ft x ft = 43560 x 0.3048 x 0.3048 = 4046.8 m <sup>2</sup>
+                        </p>
                     </div>
                 </div>
 
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
                         <h5 class="note">
                         14. One litre is equivalent to 1000 cm<sup>3</sup>.How many litres are there in 231 in<sup>3</sup>?
@@ -311,7 +341,7 @@
                     </div>
                 </div>
 
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
                         <h5 class="note">
                             15. The following time intervals are given in seconds.Convert them to years.
@@ -329,7 +359,7 @@
                     </div>
                 </div>
 
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
                         <h5 class="note">
                             16. The shortest life-time of an elementary particle is 10 <sup>-23</sup>s and the age of the universe
@@ -341,7 +371,7 @@
                     </div>
                 </div>
 
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
                         <h5 class="note">
                             17. In fixing the standard for time we can either choose the solar day or the 
@@ -349,11 +379,14 @@
                         </h5> 
                     </div>
                     <div class="note-ans">
-                        <p class="note"></p>
+                        <p class="note">
+                            Atomic clock is better because it can measure acturately even a very short time intervel of about 10 <sup>-10</sup>
+                            seconds.
+                        </p>
                     </div>
                 </div>
 
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
                         <h5 class="note">
                             18. The distance light travels in one year is defined as a light-year ( <i> 1</i>yr).
@@ -362,11 +395,13 @@
                         </h5> 
                     </div>
                     <div class="note-ans">
-                        <p class="note"></p>
+                        <p class="note">
+                            It takes 10<sup>5</sup> years (100 000 years).
+                        </p>
                     </div>
                 </div>
 
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
                         <h5 class="note">
                             19. According to observations and measurements the farthest galaxies are at a distance of 10<sup>26</sup>m 
@@ -380,7 +415,7 @@
                 </div>
     
                 
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                     <div class="note-que">
                         <h5 class="note">
                             20. 40 mi h<sip>-1</sip> is the quotient of 40 miles and 1 h and 1 m s<sup>-1</sup> is the quotient of 1 m and 
@@ -392,7 +427,7 @@
                     </div>
                 </div>
                 
-                <div class="exercises">
+                <div class="exercises" id="note-list">
                         <div class="note-que">
                             <h5 class="note">
                                 21. The mass of an electron is m<sub>e</sub> = 9.1 x 10<sup>-31</sup>kg. The mass of a muon is about 207 m<sub>e</sub>
@@ -407,5 +442,18 @@
 
 
             </div>
+
+            <script src="framework/jquery.js"></script>
+            <script>
+             $("document").ready(function(){
+                $("#data-list").on("keyup", function() {
+                    var value = $(this).val();
+                    $("#note-list").filter(function(){
+                        $(this).toggle($(this).text().indexOf(value) > -1)
+                    });
+                
+                });
+            });
+            </script>
     </body>
 </html>
