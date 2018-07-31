@@ -42,7 +42,7 @@ a:focus {
 .course {
     padding: 15px;
     border-radius: 15px;
-    width: 50%;
+    width: 100%;
     font-family: "Zawgyi-One",Arial, Helvetica, sans-serif,'Uni Mon';
 }
 .formula {
