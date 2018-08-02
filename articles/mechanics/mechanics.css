@@ -45,6 +45,9 @@ a:focus {
     width: 100%;
     font-family: "Zawgyi-One",Arial, Helvetica, sans-serif,'Uni Mon';
 }
+.checked {
+    color: orange;
+}
 .formula {
     border: 1px solid #000;
     padding: 4px;
