@@ -8,12 +8,12 @@
         <meta name="description"    content="၉တန္း ႐ူပေဗဒ အခန္း (၁) ေလ့က်င့္ခန္းမ်ား">
         <meta name="keywords"       content="chapter-1, mechanics, Grade-9 physics chapter-1">
 
-        <script src="framework/bootstrap.min.js"></script>
-        <script src="framework/popper.min.js"></script>
-        <script src="framework/jquery.js"></script>
-        <script src="framework/chapter-4-forces.js"></script>
+        <script src="framework/grade-9.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" href="framework/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://mmwebfonts.comquas.com/fonts/?font=zawgyi" />
         <link rel="stylesheet" href="https://mmwebfonts.comquas.com/fonts/?font=unimon" />
         <style>
@@ -41,6 +41,12 @@
         }
         .devided {
             font-style: bold;
+        }
+        button,spanq {
+            margin-top: 10px;
+        }
+        #more {
+            display: none;
         }
         </style>
     </head>
@@ -74,15 +80,36 @@
 
             <input class="form-control search-note" id="data-list" type="text" placeholder="Search.." maxlength="2">
 
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#home">Eg(1)-(16)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu1">Eg(17)-(32)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="home" class="container tab-pane active"><br>
+
             <div class="exercises" id="note-list">
                 <div class="note-que">
                     <h5 class="note">Eg(1) 
                         If 10 N force acts upon a 2 kg mass,find the acceleration produced.
                     </h5>
-
+                    <h6 class="note">
+                        2kg ေပၚကို 10N အား သက္ေရာက္လိုက္မယ္ဆိုရင္ ျဖစ္လာမယ့္ အ႐ွိန္ကို ႐ွာပါတဲ့။
+                    </h6>
                 </div>
                 <div class="note-ans">
                     <p class="note">
+                        တတိယနိယာမအရ အ႐ွိန္နဲ႔ အားနဲ႔ဟာ အရာတစ္ခုတည္းရဲ႕ သြင္ျပင္လကၡဏာႏွစ္ခုပဲ။ လြယ္လြယ္ေျပာရရင္ 
+                        <b>သက္ေရာက္အားကို သိရင္ ျဖစ္လာမယ့္အ႐ွိန္ကိုလည္း သိမွာပဲ။ ျဖစ္လာတဲ့အ႐ွိန္ကို သိရင္ သက္ေရာက္လိုက္မယ့္အားကို သိမွာပဲ။</b> 
+                        <br> အခုပုစာၦမွာ သက္ေရာက္တဲ့အားကို သိတယ္ဆိုရင္ေတာ့ ျဖစ္လာမယ့္အ႐ွိန္ကိုလည္း တြက္လို႔ရၿပီေပါ့။ mass ကိုလည္း ေပးထားတယ္ေလ။ <br>
                         <button class="btn btn-outline-secondary" type="button" id="answer-btn1">Answer</button>
                         <span class="answer1" style="display: none;"> 5 ms<sup>-2</sup></span>
                     </p>
@@ -96,11 +123,35 @@
                         Find the magnitude of a force needed to acceleration an electron from rest to a 
                         velocity of 10<sup>9</sup> cm s<sup>-1</sup> in 10 s. (An electron mass = 9.1 x 10<sup>-28</sup>g)
                     </h5>
+                    <h6 class="note">
+                        အီလက္ထရြန္တစ္လံုး နားေနရာကေန 10 s အတြင္းမွာ အလ်င္ႏႈန္း 10 cms<sup>-1</sup> 
+                                                ျဖစ္လာေအာင္ အားဘယ္ေလာက္ သက္ေရာက္လိုက္ရမလဲ (အားဘယ္ေလာက္လိုမလဲ)တဲ့။ velocity,time,mass ေပးၿပီး force ကို႐ွာခိုင္းတာ။           
+                    </h6>
                 </div>
                 <div class="note-ans">
                     <p class="note">
+                        အားနဲ႔ ဆက္စပ္ေနတာက အ႐ွိန္.. ၊ ျဖစ္လာမယ့္အ႐ွိန္ကိုသိရင္ သက္ေရာက္တဲ့အားကိုလည္း သိၿပီ။ ဆိုေတာ့ 
+                        အား (F) ကို သိခ်င္ရင္ 
+                        <span id="dots">...</span>
+                        <span id="more">
+                        အ႐ွိန္ (a)ကိုသိမွျဖစ္မယ္။ ဒါေပမယ့္ ပုစာၦမွာ အ႐ွိန္ (a)ကို ေပးမထားဘူး။ ဒါေၾကာင့္ 
+                        အ႐ွိန္ (a)ကို အရင္႐ွာရမယ္။ ဒီပုစာၦမွာေတာ့ အ႐ွိန္နဲ႔ ဆက္ႏြယ္ေနတာဆိုလို႔ အလ်င္ (v)ပဲ႐ွိတယ္။ (အ႐ွိန္ဆိုတာ အလ်င္ေျပာင္းလဲႏႈန္းေလ) ဒါဆို 
+                        v ကေန a ကို ႐ွာႏုိင္မလား.. ႐ွာႏုိင္ရင္ ကိုယ္လိုခ်ငိတဲ့ F ကိုလည္း ရၿပီေပါ့။ <br>
+
+                                                 ေပးထားခ်က္အရ နားေနရာကေန စထြက္လာတာ 10s အတြင္းမွာ အလ်င္က 10 cms<sup>-1</sup>ျဖစ္လာတယ္တဲ့။ 10cms<sup>-1</sup> 
+                        ဆိုတာ ေနာက္ဆံုးျဖစ္လာတဲ့ final velocity -v ။<strong> from rest နားေနရာကေန စထြက္ လာတယ္လို႔ ေျပာတဲ့အတြက္ 
+                        initial velocity - v<sub>0</sub> က သုည ျဖစ္မယ္။</strong> acceleration ရဲ႕ အဓိပၸါယ္သတ္မွတ္ခ်က္အရ 
+                        ကနဦးစဦးအလ်င္ကေန ေနာက္ဆံုးအလ်င္ေရာက္ဖုိ႔ ဘယ္ေလာက္ၾကာလဲသိရင္ အ႐ွိန္ တစ္နည္းအားျဖင့္ ဘယ္ေလာက္အခ်ိန္မွာ 
+                        ဘယ္ေလာက္အလ်င္ထိ ျမန္သြားလဲဆိုတဲ့ အလ်င္ေျပာင္းလဲႏႈန္းကို တြက္လို႔ရၿပီေပါ့။ 
+                        ပံုေသနည္းက a = (v - v<sub>0</sub>)/ t ေပါ့။ a ရရင္ F ကိုလည္း တြက္လို႔ရၿပီေပါ့။ </span>
+                        <button onclick="myFunction()" class="btn btn-outline-info" id="myBtn">Read more</button>
+                        
+                        <br>
                         <button class="btn btn-outline-secondary" type="button" id="answer-btn2">Answer</button>
-                        <span class="answer2" style="display: none;"> 9.1 x 10 <sup>-20</sup> dynes</span>
+                        <span class="answer2" style="display: none;"> 
+                            9.1 x 10 <sup>-20</sup> dyne,
+                            <font color="red">* ယူနစ္ေတြကိုသတိထားပါ။ ေပးထားတာက CGS စနစ္၊ ဒါေၾကာင့္ အားကလည္း dyne ပဲ ျဖစ္ရမယ္။</font>
+                        </span>
                     </p>
                 </div>
             </div>
@@ -111,11 +162,19 @@
                         A 12 lb force gives a body an acceleration of 4 ft s<sup>-2</sup>
                         .Find the mass of the body.
                     </h5>
+                    <h6 class="note">
+                        12 lb အားက အရာဝတၳဳတစ္ခုကို အ႐ွိန္ 4 fts<sup>-2</sup> ျဖစ္ေစတယ္။ ဒါဆို အဲ့ဒီအရာဝတၱဳရဲ႕ mass ကဘယ္ေလာက္လဲတဲ့။ 
+                    </h6>
                 </div>
                 <div class="note-ans">
                     <p class="note">
+                        လြယ္ပါတယ္။ အ႐ွိန္ a ကိုေရာ အား F ကိုေရာ ေပးထားေတာ့ F = ma အရ mass ကို တြက္လို႔ရၿပီေပါ့။ <br>
                         <button class="btn btn-outline-secondary" type="button" id="answer-btn3">Answer</button>
-                        <span class="answer3" style="display: none;"> 3 sl</span>
+                        <span class="answer3" style="display: none;"> 3 sl,
+                            <font color="red">
+                                * ယူနစ္ ေတြကို သတိထားပါ၊ FPS စနစ္ေတြျဖစ္ေနပါတယ္။ ဒါေၾကာင့္ mass ရဲ႕ unit ကလည္း (slag-sl)ပဲ ျဖစ္ရမယ္။
+                            </font>
+                        </span>
                     </p>
                 </div>
             </div>
@@ -127,6 +186,14 @@
                         A force of 10 N is applied horizontally to the ball. Find the speed of the ball and the distance 
                         travelled after 6s.
                     </h5>
+                    <h6 class="note">
+                        4 kg ႐ွိတဲ့ ေဘာလံုးေလးက ေခ်ာမြတ္ေနတဲ့ျပင္ညီေပၚမွာ ႐ွိေနတယ္။ အဲဒီေဘာလံုးကို horizontal direction အတုိင္း 10 N အားနဲ႔ 
+                        တြန္းလႊတ္လိုုက္တယ္။ ဒါဆို အခ်ိန္ 6 s ၾကာၿပီးတဲ့အခါ ျဖစ္လာမယ့္ အျမန္ႏႈန္း speed နဲ႔ ေပါက္ေရာက္ခဲ့တဲ့ ခရီးအကြာအေဝး distance ကို တြက္ပါတဲ့။ 
+                        m, F, t ေပးၿပီး speed နဲ႔ distance. ကိုတြက္ခိုင္းတာ။ speed ကို အရင္ စဥ္းစားၾကည့္ရေအာင္။ <br>
+                        6 s ၾကာတဲ့အခါ ျဖစ္လာမယ့္ speed..။ speed ဆိုေပမယ့္ velocity (v) လို႔ ေျပာလည္းရတယ္။ 
+                        6 s ၾကာတဲ့အခါ ျဖစ္လာမယ့္ velocity ေပါ့။ velocity ဆိုတာ acceleration နဲ႔ပတ္သက္ေနတဲ့ေကာင္၊ acceleration 
+                        ကို သိရင္ velocity ကိုလည္း တြက္လို႔ရႏိုင္တယ္။ ေပးခ်က္ထဲမွာ F ပါေတာ့ a ကို တြက္လို႔ရၿပီေပါ့။
+                    </h6>
                 </div>
                 <div class="note-ans">
                     <p class="note">
@@ -320,6 +387,8 @@
                     </p>
                 </div>
             </div>
+        </div>
+        <div id="menu1" class="container tab-pane fade">
 
             <div class="exercises" id="note-list">
                 <div class="note-que">
@@ -600,7 +669,8 @@
                     </p>
                 </div>
             </div>
-
+            </div>
+        </div>
 
         </div>
 
