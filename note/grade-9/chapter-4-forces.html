@@ -9,11 +9,10 @@
         <meta name="keywords"       content="chapter-1, mechanics, Grade-9 physics chapter-1">
 
         <script src="framework/grade-9.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="framework/jquery.js"></script>
+        <script src="framework/popper.min.js"></script>
+        <script src="framework/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://mmwebfonts.comquas.com/fonts/?font=zawgyi" />
         <link rel="stylesheet" href="https://mmwebfonts.comquas.com/fonts/?font=unimon" />
         <style>
@@ -52,8 +51,9 @@
     </head>
     <body>
 
+        <!--create a navigation bar-->
         <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
-            <a class="navbar-brand" href="mmphysic.000webhostapp.com"> Chapter-1 (Mechanics)</a>
+            <a class="navbar-brand" href=""> Chapter-1 (Mechanics)</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="navbarPhy">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -76,25 +76,10 @@
                 </div>
             </nav> 
 
+        <!--create a main session-->
         <div class="container text">
-
-            <input class="form-control search-note" id="data-list" type="text" placeholder="Search.." maxlength="2">
-
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#home">Eg(1)-(16)</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#menu1">Eg(17)-(32)</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
-                </li>
-            </ul>
-
-            <div class="tab-content">
-                <div id="home" class="container tab-pane active"><br>
+            <!--create a search bar-->
+            <input class="form-control search-note" id="data-list" type="text" placeholder="Search.." maxlength="2"> <br>
 
             <div class="exercises" id="note-list">
                 <div class="note-que">
@@ -132,8 +117,7 @@
                     <p class="note">
                         အားနဲ႔ ဆက္စပ္ေနတာက အ႐ွိန္.. ၊ ျဖစ္လာမယ့္အ႐ွိန္ကိုသိရင္ သက္ေရာက္တဲ့အားကိုလည္း သိၿပီ။ ဆိုေတာ့ 
                         အား (F) ကို သိခ်င္ရင္ 
-                        <span id="dots">...</span>
-                        <span id="more">
+                    
                         အ႐ွိန္ (a)ကိုသိမွျဖစ္မယ္။ ဒါေပမယ့္ ပုစာၦမွာ အ႐ွိန္ (a)ကို ေပးမထားဘူး။ ဒါေၾကာင့္ 
                         အ႐ွိန္ (a)ကို အရင္႐ွာရမယ္။ ဒီပုစာၦမွာေတာ့ အ႐ွိန္နဲ႔ ဆက္ႏြယ္ေနတာဆိုလို႔ အလ်င္ (v)ပဲ႐ွိတယ္။ (အ႐ွိန္ဆိုတာ အလ်င္ေျပာင္းလဲႏႈန္းေလ) ဒါဆို 
                         v ကေန a ကို ႐ွာႏုိင္မလား.. ႐ွာႏုိင္ရင္ ကိုယ္လိုခ်ငိတဲ့ F ကိုလည္း ရၿပီေပါ့။ <br>
@@ -143,10 +127,8 @@
                         initial velocity - v<sub>0</sub> က သုည ျဖစ္မယ္။</strong> acceleration ရဲ႕ အဓိပၸါယ္သတ္မွတ္ခ်က္အရ 
                         ကနဦးစဦးအလ်င္ကေန ေနာက္ဆံုးအလ်င္ေရာက္ဖုိ႔ ဘယ္ေလာက္ၾကာလဲသိရင္ အ႐ွိန္ တစ္နည္းအားျဖင့္ ဘယ္ေလာက္အခ်ိန္မွာ 
                         ဘယ္ေလာက္အလ်င္ထိ ျမန္သြားလဲဆိုတဲ့ အလ်င္ေျပာင္းလဲႏႈန္းကို တြက္လို႔ရၿပီေပါ့။ 
-                        ပံုေသနည္းက a = (v - v<sub>0</sub>)/ t ေပါ့။ a ရရင္ F ကိုလည္း တြက္လို႔ရၿပီေပါ့။ </span>
-                        <button onclick="myFunction()" class="btn btn-outline-info" id="myBtn">Read more</button>
-                        
-                        <br>
+                        ပံုေသနည္းက a = (v - v<sub>0</sub>)/ t ေပါ့။ a ရရင္ F ကိုလည္း တြက္လို႔ရၿပီေပါ့။ 
+                       
                         <button class="btn btn-outline-secondary" type="button" id="answer-btn2">Answer</button>
                         <span class="answer2" style="display: none;"> 
                             9.1 x 10 <sup>-20</sup> dyne,
@@ -662,14 +644,14 @@
                 </div>
                 <div class="note-ans">
                     <p class="note">
-                            <button class="btn btn-outline-secondary" type="button" id="answer-btn32">Answer</button>
-                            <span class="answer32" style="display: none;"> 
-                                F = 7 N
-                            </span>                                                                                                     
+                        <button class="btn btn-outline-secondary" type="button" id="answer-btn32">Answer</button>
+                        <span class="answer32" style="display: none;"> 
+                            F = 7 N
+                        </span>                                                                                                     
                     </p>
-                </div>
+                </div> 
             </div>
-            </div>
+        
         </div>
 
         </div>
