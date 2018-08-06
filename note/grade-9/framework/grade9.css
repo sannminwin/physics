@@ -30,6 +30,6 @@ button,spanq {
     display: none;
 }
 .label {
-    color: rgb(163, 162, 162);
+    color: #ddd;
     font-size: 15px;
 }
