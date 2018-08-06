@@ -18,6 +18,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
         <style>
+            body{
+                font-family: 'Zawgyi-One','Courier New', Courier, monospace,'Uni Mon';
+            }
                 /* Make the image fully responsive */
                 .carousel-inner img {
                     width: 100%;
@@ -26,6 +29,9 @@
                 .team-img {
                     border: 5px solid #ddd;
                     border-radius: 10px;
+                }
+                .img-slide {
+                    margin-top: 100px;
                 }
                 .team-members {
                     margin-top: 50px;
@@ -52,13 +58,16 @@
             <div class="collapse navbar-collapse" id="navbarPhy">
                 <ul class="navbar-nav">
                     <li class="nav-items">
-                        <a class="nav-link" href="https://nayyaung9.github.io/mmphysicsref/laws/laws.html">List</a>
+                        <a class="nav-link" href="https://nayyaung9.github.io/mmphysicsref/physics/what_is_physics.html">႐ုပေဗဒ ဆိုတာဘာလဲ</a>
                     </li>
                     <li class="nav-items">
-                        <a class="nav-link" href="https://nayyaung9.github.io/mmphysicsref/">Home</a>
+                        <a class="nav-link" href="https://nayyaung9.github.io/mmphysicsref/#physics-studios">physics မတၱာမ်ားအေၾကာင္းေလ့လာရန္</a>
                     </li>
                     <li class="nav-items">
-                        <a class="nav-link" href="https://nayyaung9.github.io/mmphysicsref/#physics-studios">Physics Studios</a>
+                        <a class="nav-link" href="https://nayyaung9.github.io/mmphysicsref/laws/laws.html">နိယာမ ဥပေဒသ မ်ားအေၾကာင္း</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="https://nayyaung9.github.io/mmphysicsref/note/notes.html">Chapter အလိုက္ မွတ္စုမ်ား</a>
                     </li>
                 </ul>
             </div>
@@ -79,7 +88,7 @@
                     </ul>
                       
                     <!-- The slideshow -->
-                    <div class="carousel-inner">
+                    <div class="carousel-inner img-slide">
                         <div class="carousel-item active">
                             <img src="image/team0.jpg" class="team-img">
                         </div>
@@ -211,6 +220,13 @@
                     
                     <script>
                     $(document).ready(function(){
+
+                        $(".navbar-toggler").on("click",function(){
+                            $("#navbarPhy").slideToggle();
+                            if( $("a.nav-link").on("click",function(){
+                                $("#navbarPhy").slideUp();
+                        }));
+                    });
                         // Activate Carousel
                         $("#myCarousel").carousel({interval: 2500});
                         
