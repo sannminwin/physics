@@ -5,7 +5,7 @@
         <title>Physics Website Admin team</title>
 
         <meta charset="utf-8">
-        <meta name="viewport" content="width=deveice-width ,initial-scale=1.0">
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
         <meta name="author" content="">
         <meta name="keywords" content="">
 
@@ -33,12 +33,39 @@
                 .card {
                     margin-top: 30px;
                 }
+                .card-label {
+                    padding: 0;
+                }
                 </style>
     </head>
     <body>
+
+        <!--create a navbar bar-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="">
+                Physics Website Team
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="navbarPhy">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarPhy">
+                <ul class="navbar-nav">
+                    <li class="nav-items">
+                        <a class="nav-link" href="https://nayyaung9.github.io/mmphysicsref/laws/laws.html">List</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="https://nayyaung9.github.io/mmphysicsref/">Home</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="https://nayyaung9.github.io/mmphysicsref/#physics-studios">Physics Studios</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         
+        <!--create a slideshow image & images-->
         <div class="container mt-3">
-            <h2>Physics website admin team</h2>
 
                 <div id="myCarousel" class="carousel slide">
                     
@@ -82,146 +109,104 @@
         </div>
 
         <div class="container team-members">
-            <div class="row">
-                <div class="col-sm-6">
+            
+            <div class="row team-row">
+                <div class="col-sm-4">
                     <div class="card">
-                        <img src="image/shine-htet.jpg" class="card-img-top" alt="Alexander Shine Htet" style="width: 100%">
+                        <img src="image/zin-lin-khant.jpg" class="card-img-top rounded" alt="Zin Lin Khant" width="100%;">
                         <div class="card-body">
-                            <h4 class="card-title">
-                                <i class="fas fa-user"></i>
-                                Alexander Shine Htet
-                            </h4>
-                            <p class="card-text">
-                                <i class="fas fa-edit"></i>Text-editor at Physics e-website <br>
-                                hobby- Java programmer <br>
-                                age - 16 <br>
-                                <a href="https://m.facebook.com/shine.htet.17?tsid=0.2618914458282138&source=result">
-                                <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card">
-                        <img src="image/wai-yan.jpg" class="card-img-top" alt="Wai Yan Nyein Chan Oo" style="width: 100%">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                    <i class="fas fa-user"></i> 
-                                    Wai Yan Nyein Chan Oo 
-                            </h4>
-                            <p class="card-text">
-                                    <i class="fas fa-edit"></i>Text-editors at Physics e-website <br>
-                                Hobby- <br>
-                                age - 17    <br>
-                                <a href="https://m.facebook.com/waiyannyein.chanoo.5?tsid=0.24584040407279462&source=result">
+                            <h4 class="card-title text-center">Zin Lin Khant</h4>
+                            <p class="card-text text-left">
+                                <i class="fas fa-edit"></i> &nbsp;&nbsp; Uploader <br>
+                                <i class="fas fa-code"></i> &nbsp;&nbsp; Java Programmer <br>
+                                <i class="fas fa-chalkboard-teacher"></i> &nbsp;&nbsp; BEHS(2)BAHAN Nanyan <br>
+                                <a href="https://m.facebook.com/profile.php?id=100025189393711&ref=content_filter">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <div class="card">
-                    <img src="image/zin-lin-khant.jpg" class="card-img-top" alt="Zin Lin Khant" style="width: 100%">
+                        <img src="image/wai-yan.jpg" class="card-img-top rounded" alt="Wai yan nyein Chan OO" width="100%;">
                         <div class="card-body">
-                            <h4 class="card-title">
-                                <i class="fas fa-user"></i>
-                                Zin Lin Khant  
-                            </h4>
+                            <h5 class="card-title text-center">Wai Yan Nyein Chan Oo</h5>
                             <p class="card-text">
-                                <i class="fas fa-edit"></i>Text-editors at Physics e-website <br>
-                                Hobby- Java programmer <br>
-                                age - 16 <br>
-                                <a href="https://m.facebook.com/agkaung.khant.73?tsid=0.9014862035345939&source=result">
+                                <i class="fas fa-edit"></i> &nbsp;&nbsp; Uploader <br>
+                                <i class="fas fa-chalkboard-teacher"></i> &nbsp;&nbsp; BEHS(3)South Okkala <br>
+                                <a href="https://m.facebook.com/profile.php?id=100015959162888&ref=content_filter">
                                     <i class="fab fa-facebook-f"></i>
-                                </a>   
+                                </a>
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <div class="card">
-                        <img src="image/lin-thit-kyaw.jpg" class="card-img-top" alt="Lin Thit Kyaw" style="width: 100%">
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <i class="fas fa-user"></i>
-                                Lin Thit Kyaw
-                            </h4>
+                       <img src="image/lin-thit-kyaw.jpg" class="card-img-top rounded" alt="Wai yan nyein Chan OO" width="100%;">
+                       <div class="card-body">
+                            <h4 class="card-title text-center">Lin Thit Kyaw</h4>
                             <p class="card-text">
-                                <i class="fas fa-edit"></i>Text-editors at Physics e-website <br>
-                                Hobby- <br>
-                                age - 16   <br>
-                                <a href="https://m.facebook.com/profile.php?id=100014976182409&tsid=0.3581107438948663&source=result">
+                                <i class="fas fa-edit"></i> &nbsp;&nbsp; Uploader <br>
+                                <i class="fas fa-chalkboard-teacher"></i> &nbsp;&nbsp; BEHS(1)DAGON <br>
+                                <a href="https://m.facebook.com/profile.php?id=100014976182409&tsid=0.2525813431872439&source=result">
                                     <i class="fab fa-facebook-f"></i>
-                                </a> 
+                                </a>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-6">
+            <div class="row team-row">
+                <div class="col-sm-4">
                     <div class="card">
-                        <img src="image/tsu-lei-wati.jpg" class="card-img-top" alt="Tsu Lei Wati" style="width: 100%">
+                        <img src="image/shine-htet.jpg" class="card-img-top rounded" alt="Alexander Shine Htet" width="100%;">
                         <div class="card-body">
-                            <h4 class="card-title">
-                                <i class="fas fa-user"></i>
-                                tsu Lei Wati
-                            </h4>
+                            <h4 class="card-title text-center">Shine Htet</h4>
                             <p class="card-text">
-                                <i class="fas fa-edit"></i>Text-editors at Physics e-website <br>
-                                Hobby- <br>
-                                age - 16   <br>
-                                <a href="https://m.facebook.com/tsulei.watty?tsid=0.06366982069343119&source=result">
+                                <i class="fas fa-edit"></i> &nbsp;&nbsp; Uploader <br>
+                                <i class="fas fa-code"></i> &nbsp;&nbsp; Java Programmer <br>
+                                <a href="https://m.facebook.com/profile.php?id=100010013400287&ref=content_filter">
                                     <i class="fab fa-facebook-f"></i>
-                                </a> 
+                                </a>
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="image/tsu-lei-wati.jpg" class="card-img-top rounded" alt="Tsu Lei Watty" width="100%;">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Tsu Lei Watty</h4>
+                            <p class="card-text">
+                                <i class="fas fa-edit"></i> &nbsp;&nbsp; Uploader <br>
+                                <i class="fas fa-chalkboard-teacher"></i> &nbsp;&nbsp; <br>
+                                <a href="https://m.facebook.com/tsulei.watty?tsid=0.22980122007633774&source=result">
+                                    <i class="fab fa-facebook-f"></i> 
+                                </a>
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-4">
                     <div class="card">
-                        <img src="image/ei-phyu-zin.jpg" class="card-img-top" alt="Ei phyu zin" style="width: 100%">
+                        <img src="image/ei-phyu-zin.jpg" class="card-img-top rounded" alt="ei-phyu-zin" width="50%;">
                         <div class="card-body">
-                            <h4 class="card-title">
-                                <i class="fas fa-user"></i>
-                                Ei Phyu Zin
-                            </h4>
+                            <h4 class="card-title text-center">Ei Phyu Zin</h4>
                             <p class="card-text">
-                                <i class="fas fa-edit"></i>   Text-editors at Physics e-website <br>
-                                        Hobby- <br>
-                                        age - 16   <br>
-                                <a href="https://m.facebook.com/profile.php?id=100026253947757&tsid=0.6808202826065715&source=result">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a> 
+                                <i class="fas fa-edit"></i> &nbsp;&nbsp; Uploader <br>
+                                <i class="fas fa-chalkboard-teacher"></i> &nbsp;&nbsp; BEHS(3)Tarmwe <br>
+                                <a href="https://m.facebook.com/profile.php?id=100026253947757&ref=content_filter">
+                                    <i class="fab fa-facebook-f"></i> &nbsp; 
+                                </a>
                             </p>
                         </div>
-                    </div>      
+                    </div>
                 </div>
             </div>
 
-            <div class="card">
-                <img src="image/nay-yaung-lin-lakk.jpg" alt="Nay Yaung Lin Lakk" class="card-img-top" style="width: 100%;">
-                <div class="card-body">
-                    <h4 class="card-title">
-                        Nay Yaung Lin Lakk &nbsp; 
-                    </h4>
-                    <p class="card-text">
-                        <i class="fas fa-code"></i>Web Coder at Physics e-website <br>
-                        <i class="fas fa-edit"></i>Text-editor at Physics e-website <br>
-                        Hobby - Technician <br>
-                        age - 16 <br>
-                        <a href="https://m.facebook.com/messages/read/?tid=cid.c.100011175703790%3A100012659253029&soft=bookmarks">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </p>
-
-                </div>
-            </div>
         </div>
                     
                     <script>
