@@ -75,7 +75,7 @@ a:focus {
     font-family: Arial, Helvetica, sans-serif;
 }
 .date {
-    color: #555;
+    color: rgb(34, 34, 34);
     font-family: 'Times New Roman', Times, serif;
 }
 .media {
