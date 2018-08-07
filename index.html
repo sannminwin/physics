@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="framework/bootstrap.min.css">
         <link rel="stylesheet" href="https://mmwebfonts.comquas.com/fonts/?font=zawgyi" />
         <link rel="stylesheet" href="https://mmwebfonts.comquas.com/fonts/?font=unimon" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
        <script src="https://github.com/nayyaung9/mmphysicsref/blob/master/framework/jquery.js"></script>
         <style>
@@ -31,7 +32,7 @@
     <body id="main-body">
 
         <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
-            <a class="navbar-brand" href="mmphysic.000webhostapp.com"> Myanmar Edu-website</a>
+            <a class="navbar-brand" href="https://nayyaung9.github.io/mmphysicsref"> Myanmar <i class="fas fa-book-reader"></i> website</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="navbarPhy">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -99,33 +100,7 @@
                 </div>
             </div>
 
-            <div class="container" style="margin-top: 20px;">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <a href="#intro" id="down-arrow" class="text-success arrow"><span style="font-size: 30px;" class="bottom-down-arrow"> &nbsp; ⬇ &nbsp;  </span></a>
-                    </div>
-                </div>
-            </div>
         </section>
-        
-        <!--to introduction for the key code-->
-        <script src="framework/jquery.js"></script>
-        <script>
-        $(function() {
-            $('a#down-arrow').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                    if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-                }
-            });
-        });
-        </script>
 
         <section class="section-intro" id="intro">
             <div class="container">
@@ -144,7 +119,7 @@
             <div class="container" style="margin-top: 20px;">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <a href="#physics-studios" id="down-arrow" class="text-success arrow"><span style="font-size: 30px;" class="bottom-down-arrow"> &nbsp; ⬇ &nbsp;  </span></a>
+                        <a href="#physics-studios" id="down-arrow" class="text-success arrow"><i class="fas fa-angle-down"></i></a>
                     </div>
                 </div>
             </div>
@@ -275,7 +250,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <a href="#main-body" id="top-up" class="text-success arrow"><span style="font-size: 30px;" class="top-up-arrow"> ⬆ </span></a>
+                        <a href="#main-body" id="top-up" class="text-success arrow"><i class="fas fa-angle-up"></i></a>
                     </div>
                 </div>
             </div>
