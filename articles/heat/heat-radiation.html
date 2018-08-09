@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Heat | Heat Radiation</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport"       content="width=device-width, initial-scale=1.0">
+        <meta name="author"         content="Nay Yaung Lin Lakk">
+        <meta name="description"    content="အပူျဖာကူးျခင္း">
+        <meta name="keywords"       content="Heat Radiation">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="jquery.js"></script>
+        <script src="mechanics.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />
+        <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=unimon' />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="logo.png">
+        <link rel="stylesheet" href="heat.css">
+    </head>
+    <body>
+            <nav class="navbar navbar-expand-md bg-success navbar-dark fixed-top">
+                <a class="navbar-brand" href="https://nayyaung9.github.io/mmphysicsref/articles/mechanics/pressure.html">အပူျဖာကူးျခင္း </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="navbarPhy">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarPhy">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://edumyanmar.net/physics/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://nayyaung9.github.io/mmphysicsref/articles/mechanics/mechanics.html">List</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid image-fluid text">
+                <img src="image/Heat-radiation.jpg" width="100%">
+            </div>
+            <div class="contianer-fluid header-fluid bg-success text-white">
+                <h2 class="container"> 
+                    Heat Radiation
+                </h2>
+            </div>
+
+            <div class="date container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="float-left">
+                                <span class="text-info">Aug 8 at 9:12 p.m</span>
+                            </div>
+                            <div class="float-right">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="container text">
+                <p>
+                    ကဲ​ေနာက္​ထပ္​အပူကူးနည္​း တစ္​ခုကို စဥ္​းစားၾကည္​့ရ​ေအာင္​။အရာ၀တၳဳ​ေတြ အရည္​​ေတြ အ​ေငြ႕​ေတြမွာ အပူဘယ္​လိုကူးခဲ့သလဲဆိုတာ 
+                    သိခဲ့ၿပီးၿပီ။​ေနမင္​းႀကီးရဲ႕အပူက ကမာၻ​ေျမ​ေပၚ​ေရာက္​လာတာ အဲ့လိုနည္​း​ေတြနဲ႔မဟုတ္​ဖူးဆိုတာ ငါ့​ေကာင္​​ေတြလည္​း ရိပ္​မိမွာပါ။​ေနနဲ႔ကိုယ္​တို႔
+                    ၾကားမွာ ​ေလဟာ ဟင္​းလင္​းျပင္​ႀကီးပဲ ရွိတယ္​ဆိုတာ ကိုယ္​တို႔သိတယ္​။ဒီ​ေတာ့ လက္​ဆင္​့ကမ္​းသယ္​လာတာတို႔ မျဖစ္​နိုင္​ဖူး ဒါဆို ဘယ္​လိုနည္​းနဲ႔လဲ...
+                                        .ျဖာထြက္​ျခင္း(radiation)နည္​းနဲ႔​ေပါ့။ဒီ​ေကာင္​က တစ္​ျခားနွစ္​ခုနဲ႔မတူဖူး နည္​းနည္​းထူးတယ္​။နံပါတ္​၁ထူးျခားခ်က္​က radiationဆိုတာလ်ွပ္​စစ္​သံလိုက္​လႈိင္​း
+                    (electromagnetic wave)၊ဒါ​ေၾကာင္​့ radiation ျဖစ္​ဖို႔အတြက္​ ၾကားခံနယ္​မလိုဖူး။ <br>
+                    နံပါတ္​၂ထူးျခားတာက radiationျဖစ္​ဖို႔ အပူခ်ိန္​ျခားနားဖို႔မလိုဖူး။အရာ၀တၳဳတစ္​ခု အပူခ်ိန္​ရွိတာနဲ႔ျဖာထြက္​ျခင္​းျဖစ္​တယ္​။ဆို​ေတာ့ 
+                    အစိုင္​အခဲပၿဲဖစ္​ျဖစ္​၊အရည္​ပဲ ျဖစ္​ျဖစ္​၊အ​ေငြ႕ပဲ ျဖစ္​ျဖစ္​အပူရွိရင္​ျဖာထြက္​ျခင္​းျဖစ္​တယ္​။
+                    ဒါ​ေပမယ္​့ ပတ္​၀န္​းက်င္​အပူခ်ိန္​က မ်ား​ေနရင္​ အသားတင္​စုပ္​ယူမွ ျဖစ္​မယ္​။အရာ၀တၳဳရဲ႕ အပူခ်ိန္​က ပတ္​၀န္​းက်င္​ထက္​မ်ား​ေနရင္​ အသားတင္​ျဖာထြက္​ျခင္​းျဖစ္​တယ္​။
+                </p>
+                <p>
+                    <strong>
+                        Radiation is the transfer of that does not require a material medium.Energy is transferring by electromagnetic waves that pass through a medium or even vaccum. <br>
+                        အပူျဖာထြက္​ျခင္​းဟူသည္​ ရုပ္​ပစၥည္​းၾကားခံနယ္​ မလို​ေသာအပူကူး​ေျပာင္​းမႈျဖစ္​သည္​။စြမ္​းအင္​သည္​ ​ေလဟာနယ္​ကို ျဖတ္​၍(သို႔)ၾကားခံနယ္​ကိုျဖတ္​၍ လ်ွပ္​စစ္​သံလိုက္​လႈိင္​းပံုစံျဖင္​့ကူး​ေျပာင္​းသြားသည္​။
+                    </strong>
+                </p>
+                <p>
+                    Conductionမွာတံုးက အရာ၀တၳဳ​ေတြရဲ႕အပူကူးနိုင္​ဆ (Thermal conductivity)ဟာ တစ္​ခုနဲ႔ တစ္​ခု မတူဘူး။​ေအး ဒီလိုပဲအရာ ၀တၳဳ​ေတြရဲ႕ 
+                    အပူျဖာထြက္​နိုင္​စြမ္​း၊စုပ္​ယူနိုင္​စြမ္​းဟာ တစ္​ခုနဲ႔တစ္​ခုမတူဘူး။ဥပမာ ဘုရားရင္​ျပင္​​ေပၚမွာ ​ေက်ာက္​ျပား အျဖဴနဲ႔အနက္​ခင္​းထားတယ္​။ဘယ္​​ေက်ာက္​ျပားကပိုပူမွာလဲ။
+                                        (​ေန႔လည္​ခင္​းဘုရား​ေပၚတက္​ၿပီးစမ္​းၾကည္​့)အပူရတာျခင္​းအတူတူ ​ေက်ာက္​ျပားအနက္​က ပိုပူ​ေနတာကို ​ေတြ႕ရမယ္​။
+                                        (​ေျပာင္​းျပန္​​ေျပာရရင္​ ​ေအးတဲ့ရာသီသြားစမ္​းၾကည္​့ရင္​ ​ေက်ာက္​ျပားအနက္​က ပို​ေအး​ေနတာ​ေတြ႕ရလိမ္​့မယ္​)ဘာလို႔လဲ...။
+                    အရာ၀တၳဳရဲ႕ အပူျဖာထြက္​နိုင္​စြမ္​း၊အပူစုပ္​ယူနိုင္​စြမ္​းမတူလို႔ပဲ။အပူျဖာထြက္​နိုင္​စြမ္​းကို emissive powerလို႔​ေခၚတယ္​။အပူတူရင္​​ေတာင္​ ပစၥည္​းမတူရင္​ 
+                    (emissive powerမတူရင္​)ျဖာထြက္​နိုင္​စြမ္​း၊စုပ္​ယူနိုင္​စြမ္​းမတူနိုင္​ဘူး။ၿပီး​ေတာ့​ေစာ​ေစာက​ေျပာသလိုပဲ အနက္​​ေရာင္​က အျဖဴ​ေရာင္​ထက္​ ျဖာထြက္​ဆ/
+                    စုပ္​ယူဆပို​ေကာင္​းတယ္​။အနက္​​ေရာင္​ရဲ႕ emissive powerက အျဖဴ​ေရာင္​ရဲ႕ 
+                    emissive powerထက္ပိုမ်ားတယ္​။(အ​ေရာင္​ရင္​့ရင္​့​ေတြက အ​ေရာင္​​ေပ်ာ့​ေပ်ာ့​ေတြထက္​စုပ္​ယူဆပို​ေကာင္​းတယ္​၊​ေႏြရာသီမွာ 
+                    အ​ေရာင္​​ေပ်ာ့​ေပ်ာ့​ေတြပဲ၀တ္​သင္​့တာ​ေပါ့)
+                </p>
+                <p>
+                    <strong>
+                            The total emissive power is defined ​as the total radiant energy of difference wavelength emitted from unit area of a surface of a body in one second.<br>
+
+                            စုစု​ေပါင္​းျဖာထြက္​နိုင္​စြမ္​းဟူသည္​ တစ္​စကၠန္​႔အတြင္​း တစ္​ယူနစ္​ဧရိယာမွ ျဖာထြက္​သြား​ေသာ လႈိင္​းအမ်ိဳးမ်ိဳးရွိ​ေသာျဖာထြက္​စြမ္​းအင္​စုစု​ေပါင္​းပင္​ျဖစ္​သည္​။
+                    </strong>
+                </p>
+                <p>
+                    ပစၥည္​းတစ္​ခုျဖာထြက္​နိုင္​ဆကို​ေတာ့ emissivity(e)လို႔​ေခၚတယ္​။အရာ၀တၳဳတစ္​ခုစီရွိရဲ႕ ျဖာထြက္​နိုင္​စြမ္​း/စ
+                                        ုပ္​ယူနိုင္​စြမ္​း​ေပါ့။အပူျဖာထြက္​ဆ​ေကာင္​းရင္​ emissivity (e)တန္​ဖိုးျမင္​့တယ္​။
+                </p>
+            </div>
+
+        </body>
+        </html>
